@@ -101,16 +101,31 @@ void task15()
 	{
 		std::cout << "Enter your pin:\n";
 		std::cin >> a >> b >> c >> d;
-		if (a + b + c + d != 42) std::cout << "pin is incorrect";
+		if (a + b + c + d != 42)
+			std::cout << "pin is incorrect\n";
 	}
 	std::cout << "pin is correct";
 }
 
 /*Задача 6. Сумма чисел.
-У бухгалтера сломались счеты.Напишите программу, которая считала бы сумму вводимых чисел.
+У бухгалтера сломались счеты. Напишите программу, которая считала бы сумму вводимых чисел.
 В начале у бухгалтера спрашивают, сколько чисел тот хочет сложить,
 затем нужное количество раз просят ввести число и в конце выводят получившуюся сумму*/
 
 void task16()
 {
+	int number = 0;
+	int count = 0;
+	int res = 0;
+	int i = 0;
+	std::cout << "How many times do you whant to add numbers? ";
+	std::cin >> count;
+	while (i < count)
+	{
+		std::cout << "Enter the number: ";
+		std::cin >> number;
+		res += number;
+		i++;
+	}
+	std::cout << "Your result is: " << res << "\n";
 }
