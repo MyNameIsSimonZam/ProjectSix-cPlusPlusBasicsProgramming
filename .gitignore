@@ -35,3 +35,16 @@ x86/
 *.vcxproj
 *.vcxproj.filters
 *.vcxproj.user
+
+# Игнорируем скомпилированные файлы и папку build
+build/
+
+# Игнорируем настройки VS Code
+.vscode/
+
+# Игнорируем временные файлы и логи
+*.log
+*.out
+*.o
+*.exe
+*.dll

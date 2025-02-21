@@ -2,7 +2,6 @@
 #include <string>
 #include <cmath>
 
-
 /*Задача 1. Начальник.
 Напишите программу для робота - начальника.Он спрашивает у пользователя,
 выполнил ли он задания, которые выдавал вчера, и продолжает это делать до тех пор,
@@ -11,10 +10,12 @@
 где answer — переменная с типом std::string
 Подсказка 2 : чтобы считать строку с пробелами, воспользуйтесь функцией std::getline(std::cin, line)*/
 
-void task11() {
+void task11()
+{
 	std::string answer;
 	std::cin.ignore();
-	do {
+	do
+	{
 		std::cout << "Did you make the task? ";
 		std::getline(std::cin, answer);
 	} while (answer != "Yes of course!");
@@ -29,15 +30,16 @@ void task11() {
 - Хорошо, давай куплю.
 - Все говорят “Хорошо, давай куплю.”, а ты купи слона!*/
 
-
-void task12() {
+void task12()
+{
 	std::cin.ignore();
 	std::string name;
 	std::string answer;
 	std::cout << "What is your name? ";
 	std::getline(std::cin, name);
 	std::cout << name << ", buy the elephant!\n";
-	while (1) {
+	while (1)
+	{
 		std::getline(std::cin, answer);
 		std::cout << "Everybody say like that, " << answer << ", but you, buy the elephant!\n";
 	}
@@ -47,15 +49,16 @@ void task12() {
 Напишите программу, которая выводила бы N первых степеней числа К.
 Посмотрите, что случится, если N или K будут достаточно большими*/
 
-void task13() {
+void task13()
+{
 	int k = 2;
 	int n = 1;
-	while (n < 10000) {
+	while (n < 10000)
+	{
 		std::cout << std::pow(k, n) << "\n";
 		n += 1;
 	}
 }
-
 
 /*Задача 4. Напоминалка.
 Василий — очень ответственный менеджер, но очень забывчивый.
@@ -64,7 +67,8 @@ void task13() {
 сколько раз ему напомнить, а затем нужное количество раз выводит “Вы хотели не забыть о чем - то”.
 Усложнение: добавьте возможность ввести фразу - напоминалку, чтобы можно было напоминать о чем - то конкретном*/
 
-void task14() {
+void task14()
+{
 	int count = 0;
 	int result;
 	std::string notice;
@@ -72,7 +76,8 @@ void task14() {
 	std::cin >> result;
 	std::cout << "What do you want to be reminded about? ";
 	std::cin >> notice;
-	while (count < result) {
+	while (count < result)
+	{
 		std::cout << notice << "\n";
 		count += 1;
 	}
@@ -86,8 +91,19 @@ void task14() {
 если их сумма равна 42, и “Ввод некорректный, попробуйте еще раз” в противном случае.
 Так повторяется бесконечно*/
 
-void task15() {
-
+void task15()
+{
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	int d = 0;
+	while (a + b + c + d != 42)
+	{
+		std::cout << "Enter your pin:\n";
+		std::cin >> a >> b >> c >> d;
+		if (a + b + c + d != 42) std::cout << "pin is incorrect";
+	}
+	std::cout << "pin is correct";
 }
 
 /*Задача 6. Сумма чисел.
@@ -95,20 +111,6 @@ void task15() {
 В начале у бухгалтера спрашивают, сколько чисел тот хочет сложить,
 затем нужное количество раз просят ввести число и в конце выводят получившуюся сумму*/
 
-void task16() {
-
+void task16()
+{
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
