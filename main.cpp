@@ -6,7 +6,7 @@ void task13();
 void task14();
 void task15();
 void task16();
-// void task22();
+void task17();
 // void task23();
 // void task24();
 // void task31();
@@ -23,13 +23,13 @@ void task16();
 int main() {
 	int choice;
 	std::cout << "Choose a task to run:\n";
-	 std::cout << "1. Задача 1. Начальник.\n";
-	 std::cout << "2. Задача 2. Купи слона.\n";
-	 std::cout << "3. Задача 3. Таблица степеней.\n";
-	 std::cout << "4. Задача 4. Напоминалка.\n";
-	 std::cout << "5. Задача 5. Банкомат 3.0.\n";
-	 std::cout << "6. Задача 6. Сумма чисел.\n";
-	// std::cout << "7. Задача 2. Мост и перегрузка.\n";
+	std::cout << "1. Задача 1. Начальник.\n";
+	std::cout << "2. Задача 2. Купи слона.\n";
+	std::cout << "3. Задача 3. Таблица степеней.\n";
+	std::cout << "4. Задача 4. Напоминалка.\n";
+	std::cout << "5. Задача 5. Банкомат 3.0.\n";
+	std::cout << "6. Задача 6. Сумма чисел.\n";
+	 std::cout << "7. Задача 1. Задача 1. Банкомат 4.0.\n";
 	// std::cout << "8. Задача 3. Треугольник.\n";
 	// std::cout << "9. Задача 4. Совпадение чисел(необязательная).\n";
 	// std::cout << "10. Задача 1. Военкомат.\n";
@@ -46,26 +46,26 @@ int main() {
 	std::cin >> choice;
 
 	switch (choice) {
-		 case 1:
-		 	task11();
-		 	break;
-		 case 2:
-		 	task12();
-		 	break;
-		 case 3:
-		 	task13();
-		 	break;
-		 case 4:
-		 	task14();
-		 	break;
-		 case 5:
-		 	task15();
-		 	break;
-		 case 6:
-		 	task16();
-		 	break;
-		// case 7:
-		// 	task22();
+	case 1:
+		task11();
+		break;
+	case 2:
+		task12();
+		break;
+	case 3:
+		task13();
+		break;
+	case 4:
+		task14();
+		break;
+	case 5:
+		task15();
+		break;
+	case 6:
+		task16();
+		break;
+		 case 7:
+		 	task17();
 		// 	break;
 		// case 8:
 		// 	task23();
