@@ -7,9 +7,9 @@ void task14();
 void task15();
 void task16();
 void task17();
-// void task23();
-// void task24();
-// void task31();
+void task18();
+void task19();
+void task20();
 // void task32();
 // void task33();
 // void pW1();
@@ -29,10 +29,10 @@ int main() {
 	std::cout << "4. Задача 4. Напоминалка.\n";
 	std::cout << "5. Задача 5. Банкомат 3.0.\n";
 	std::cout << "6. Задача 6. Сумма чисел.\n";
-	 std::cout << "7. Задача 1. Задача 1. Банкомат 4.0.\n";
-	// std::cout << "8. Задача 3. Треугольник.\n";
-	// std::cout << "9. Задача 4. Совпадение чисел(необязательная).\n";
-	// std::cout << "10. Задача 1. Военкомат.\n";
+	std::cout << "7. Задача 1. Задача 1. Банкомат 4.0.\n";
+	std::cout << "8. Задача 2. Кадастровые проблемы.\n";
+	std::cout << "9. Задача 3. Кожаный мешок.\n";
+	std::cout << "10. Задача 4. Военное время.\n";
 	// std::cout << "11. Задача 2. — Входит... И выходит\n";
 	// std::cout << "12. Задача 3. Пора обедать (необязательная).\n";
 	// std::cout << "Or choose the number of the practical work to run:\n";
@@ -64,18 +64,18 @@ int main() {
 	case 6:
 		task16();
 		break;
-		 case 7:
-		 	task17();
-		// 	break;
-		// case 8:
-		// 	task23();
-		// 	break;
-		// case 9:
-		// 	task24();
-		// 	break;
-		// case 10:
-		// 	task31();
-		// 	break;
+	case 7:
+		task17();
+		break;
+	case 8:
+		task18();
+		break;
+	case 9:
+		task19();
+		break;
+	case 10:
+		task20();
+		break;
 		// case 11:
 		// 	task32();
 		// 	break;
