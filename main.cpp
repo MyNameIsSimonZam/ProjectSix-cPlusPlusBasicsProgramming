@@ -10,14 +10,14 @@ void task17();
 void task18();
 void task19();
 void task20();
-// void task32();
-// void task33();
-// void pW1();
-// void pW2();
-// void pW3();
-// void pW4();
-// void pW5();
-// void pW6();
+void pW1();
+void pW2();
+void pW3();
+void pW4();
+void pW5();
+void pW6();
+void pW7();
+void pW8();
 
 
 int main() {
@@ -33,15 +33,15 @@ int main() {
 	std::cout << "8. Задача 2. Кадастровые проблемы.\n";
 	std::cout << "9. Задача 3. Кожаный мешок.\n";
 	std::cout << "10. Задача 4. Военное время.\n";
-	// std::cout << "11. Задача 2. — Входит... И выходит\n";
-	// std::cout << "12. Задача 3. Пора обедать (необязательная).\n";
-	// std::cout << "Or choose the number of the practical work to run:\n";
-	// std::cout << "21. practical work 1. Задание 1. Полёт нормальный!\n";
-	// std::cout << "22. practical work 2. Задание 2. Майские!\n";
-	// std::cout << "23. practical work 3. Задание 3. Майские — усложнение\n";
-	// std::cout << "24. practical work 4. Задание 4. Банкомат — 2\n";
-	// std::cout << "25. practical work 5. Задание 5. Усложнение задачи про кирпич\n";
-	// std::cout << "26. practical work 6. Задание 6. Грустное совершеннолетие\n";
+	std::cout << "Or choose the number of the practical work to run:\n";
+	std::cout << "11. Задание 1. Кукушка.\n";
+	std::cout << "12. Задание 2. Слишком большие числа.\n";
+	std::cout << "13. Задание 3. Коллекторы.\n";
+	std::cout << "14. Задание 4. Счастливый билетик.\n";
+	std::cout << "15. Задание 5. Числа Фибоначчи.\n";
+	std::cout << "16. Задание 6. Вклады.\n";
+	std::cout << "17. Задание 7. Сокращение дроби* (дополнительное задание).\n";
+	std::cout << "18. Задание 8. Угадай число* (дополнительное задание).\n";
 	std::cout << "Enter your choice: ";
 	std::cin >> choice;
 
@@ -76,30 +76,30 @@ int main() {
 	case 10:
 		task20();
 		break;
-		// case 11:
-		// 	task32();
-		// 	break;
-		// case 12:
-		// 	task33();
-		// 	break;
-		// case 21:
-		// 	pW1();
-		// 	break;
-		// case 22:
-		// 	pW2();
-		// 	break;
-		// case 23:
-		// 	pW3();
-		// 	break;
-		// case 24:
-		// 	pW4();
-		// 	break;
-		// case 25:
-		// 	pW5();
-		// 	break;
-		// case 26:
-		// 	pW6();
-		// 	break;
+	case 11:
+		pW1();
+		break;
+	case 12:
+		pW2();
+		break;
+	case 13:
+		pW3();
+		break;
+	case 14:
+		pW4();
+		break;
+	case 15:
+		pW5();
+		break;
+	case 16:
+		pW6();
+		break;
+	case 17:
+		pW7();
+		break;
+	case 18:
+		pW8();
+		break;
 	default:
 		std::cout << "Invalid choice. Exiting...\n";
 	}
