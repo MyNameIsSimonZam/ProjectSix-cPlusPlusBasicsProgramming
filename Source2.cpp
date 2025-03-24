@@ -274,6 +274,7 @@ void pW7() {
 
 	while (f) {
 		gcd = n % m;
+		if (gcd )
 	}
 
 
