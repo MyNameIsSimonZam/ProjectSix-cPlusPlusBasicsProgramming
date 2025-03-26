@@ -266,20 +266,36 @@ void pW7() {
 	int m = 0;
 	int n = 0;
 	int gcd = 0;
-	bool f;
+	bool f = true;
 	std::cout << "Enter the numerator: ";
 	std::cin >> m;
 	std::cout << "Enter the denominator: ";
 	std::cin >> n;
 
+	if (n == 0 || m == 0) std::cout << "It can't be 0 \n";
+	else if (m >= n) std::cout << " \n";
+
+	int tempM = m;
+	int tempN = n;
+
 	while (f) {
-		gcd = n % m;
-		if (gcd )
+		gcd = tempN % tempM;
+		if (gcd != 0) {
+			tempN = tempM;
+			tempM = gcd;
+		}
+		else {
+			gcd = tempM;
+			f = false;
+		}
 	}
-
-
-
+	m /= gcd;
+	n /= gcd;
+	std::cout << "result: " << m << " / " << n << "\n";
 }
+
+
+
 void pW8() {
 
 }
