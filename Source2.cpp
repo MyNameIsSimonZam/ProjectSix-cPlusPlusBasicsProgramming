@@ -317,11 +317,27 @@ void pW7() {
 
 void pW8() {
 	int a = 0;
-	int b = 0;
-	std::cout << "Enter the first number: ";
-	std::cin >> a;
-	std::cout << "Enter the second number: ";
-	std::cin >> b;
+	int b = 63;
+	std::string answer = "no";
+	int x = b / 2;
+	bool f = true;
+
+	while (f) {
+		std::cout << "Is your number: " << x << "?" << "\n";
+		std::cin >> answer;
+		if (answer == "yes") {
+			std::cout << "The number is: " << x << "\n";
+			f = false;
+		}
+		else {
+			std::cout << "Is your number bigger than: " << x << "?" << "\n";
+			std::cin >> answer;
+			if (answer == "yes") a == x;
+			else b = x;
+			x = (b - a + 1) / 2;
+		}
+	}
+
 
 }
 
